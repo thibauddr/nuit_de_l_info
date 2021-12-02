@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\AppEntitySauveteurs;
+use App\Entity\AppEntitySauveteur;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method AppEntitySauveteurs|null find($id, $lockMode = null, $lockVersion = null)
- * @method AppEntitySauveteurs|null findOneBy(array $criteria, array $orderBy = null)
- * @method AppEntitySauveteurs[]    findAll()
- * @method AppEntitySauveteurs[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method AppEntitySauveteur|null find($id, $lockMode = null, $lockVersion = null)
+ * @method AppEntitySauveteur|null findOneBy(array $criteria, array $orderBy = null)
+ * @method AppEntitySauveteur[]    findAll()
+ * @method AppEntitySauveteur[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class AppEntitySauveteursRepository extends ServiceEntityRepository
+class AppEntitySauveteurRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, AppEntitySauveteurs::class);
+        parent::__construct($registry, AppEntitySauveteur::class);
     }
 
     // /**
-    //  * @return AppEntitySauveteurs[] Returns an array of AppEntitySauveteurs objects
+    //  * @return AppEntitySauveteur[] Returns an array of AppEntitySauveteur objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class AppEntitySauveteursRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?AppEntitySauveteurs
+    public function findOneBySomeField($value): ?AppEntitySauveteur
     {
         return $this->createQueryBuilder('a')
             ->andWhere('a.exampleField = :val')
